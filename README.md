@@ -10,6 +10,7 @@
 
 ## Links
 Wikipedia's Sister Project: https://en.wikipedia.org/wiki/Main_Page#:~:text=Wikipedia%27s%20sister%20projects
+Sample Data: https://github.com/kentlouisetonino/cli-app-wikipedia-web-scraping/blob/develop/src/files/sister-projects.csv
 
 <br />
 
