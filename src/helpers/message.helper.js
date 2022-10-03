@@ -3,15 +3,16 @@ import chalkAnimation from 'chalk-animation'
 import sleep from './sleep.helper.js'
 
 const message = async (isError = false, message) => {
+  let title
+
   if (isError) {
-    const title = chalkAnimation.pulse(`${message}`)
-    await sleep()
-    title.stop()
+    title = chalkAnimation.pulse(`${message}`)
   } else {
-    const title = chalkAnimation.neon(`${message}`)
-    await sleep()
-    title.stop()
+    title = chalkAnimation.neon(`${message}`)
   }
+
+  await sleep()
+  title.stop()
 }
 
 export default message
