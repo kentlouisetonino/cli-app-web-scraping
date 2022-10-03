@@ -1,3 +1,3 @@
-import getSisterProjects from './helpers/sister-projects.helper.js'
+import getSisterProjects from './helpers/wikipedia/sister-projects.js'
 
 getSisterProjects()

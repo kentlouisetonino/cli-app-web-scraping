@@ -3,7 +3,7 @@ import axios from 'axios'
 import * as Cheerio from 'cheerio'
 import { Parser } from 'json2csv'
 
-import message from './message.helper.js'
+import message from '../message.helper.js'
 
 /**
  * This function will scrape the Wikipedia's Sister Projects
@@ -52,7 +52,7 @@ const getSisterProjects = async () => {
 
     await message(
       false,
-      "Successfully saving Wikipedia's data. Please check the files directory.",
+      'Successfully saving Wikipedia data. Please check the files directory.',
     )
   } catch (error) {
     await message(true, `Something\'s wrong. ${error.message}`)
