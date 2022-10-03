@@ -13,7 +13,7 @@ Wikipedia's Sister Project: https://en.wikipedia.org/wiki/Main_Page#:~:text=Wiki
 <br />
 
 ## Technologies | Packages | Tools
-- JavaScript, Axios, Cheerio, JSON2CSV, NodeJS
+- JavaScript, Axios, Cheerio, JSON2CSV, Chalk Animation, NodeJS
 
 <br />
 
@@ -24,3 +24,6 @@ npm start
 ```
 
 <br />
+
+## Recordings
+[test.webm](https://user-images.githubusercontent.com/69438999/193529069-cd94f049-0870-47b6-adde-220649ef9eb3.webm)
