@@ -3,8 +3,11 @@ import axios from 'axios'
 import * as Cheerio from 'cheerio'
 import { Parser } from 'json2csv'
 
+import message from './message.helper.js'
+
 /**
- * This function will scrape the Wikipedia's Sister Projects Link: https://en.wikipedia.org/wiki/Main_Page#:~:text=Wikipedia%27s%20sister%20projects
+ * This function will scrape the Wikipedia's Sister Projects
+ * Link: https://en.wikipedia.org/wiki/Main_Page#:~:text=Wikipedia%27s%20sister%20projects
  *
  * @returns void
  */
@@ -20,6 +23,7 @@ const getSisterProjects = async () => {
     relatedProjectsData.each(function () {
       const imageSrc = $(this).find('img').attr('src')
       const title = $(this).find('.extiw').text()
+      const projectLink = $(this).find('.extiw').attr('href')
 
       const description = $(this)
         .find('div:eq(1)')
@@ -32,15 +36,26 @@ const getSisterProjects = async () => {
       sisterProjects.push({
         imageSrc: imageSrc,
         title: title,
+        projectLink: projectLink,
         description: description,
       })
     })
 
+    // Instantiate parser.
     const parser = new Parser()
+
+    // Parse JSON or object data to CSV.
     const csv = parser.parse(sisterProjects)
+
+    // Add or update file.
     fs.writeFileSync('./src/files/sister-projects.csv', csv)
+
+    await message(
+      false,
+      "Successfully saving Wikipedia's data. Please check the files directory.",
+    )
   } catch (error) {
-    console.error(error)
+    await message(true, `Something\'s wrong. ${error.message}`)
   }
 }
 
