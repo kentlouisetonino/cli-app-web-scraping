@@ -1,5 +1,5 @@
 ## Description
-- A sample CLI App that will allow you to scrape wikipedia information.
+- A CLI Application that will allow you to scrape wikipedia information.
 - After scraping process, it will save the data into a Comma Separated Values (CSV) file.
 - For now this will scrape only the Wikipedia's Sister Projects.
 
