@@ -13,7 +13,7 @@
 
 <br />
 
-## Technology
+## Technology Stack
 > _JavaScript • Axios • Cheerio • JSON2CSV • Chalk Animation • NodeJS_
 
 <br />
