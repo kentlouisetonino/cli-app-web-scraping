@@ -8,7 +8,7 @@
 <br />
 
 ## Technology Stack
-> Axios • Chalk Animation • Cheerio • JSON2CSV • Prettier • TypeScript • NodeJS • GitHub Actions Workflow
+> [Axios](https://www.npmjs.com/package/axios) • [Chalk Animation](https://www.npmjs.com/package/chalk-animation) • [Cheerio](https://www.npmjs.com/package/cheerio) • [JSON2CSV](https://www.npmjs.com/package/json2csv) • [Prettier](https://www.npmjs.com/package/prettier) • [TypeScript](https://www.npmjs.com/package/typescript) • [NodeJS](https://nodejs.org/docs/latest-v16.x/api/) • [GitHub Actions Workflow](https://docs.github.com/en/actions/using-workflows/about-workflows)
 
 <br />
 
