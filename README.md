@@ -8,7 +8,7 @@
 <br />
 
 ## Technology Stack
-> JavaScript • Axios • Cheerio • JSON2CSV • Chalk Animation • NodeJS
+> Axios • Chalk Animation • Cheerio • JSON2CSV • Prettier • TypeScript • NodeJS • GitHub Actions Workflow
 
 <br />
 
