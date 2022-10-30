@@ -15,7 +15,8 @@
 ## Setup
 > - Run the following commands.
 ```bash
-npm start
+npm install
+npm run start
 ```
 
 <br />
