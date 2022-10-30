@@ -1,19 +1,20 @@
 import * as fs from 'fs'
-import axios from 'axios'
 import * as Cheerio from 'cheerio'
+import axios from 'axios'
 import { Parser } from 'json2csv'
 
-import message from '../message.helper.js'
+import message from '../message.js'
 
-/**
- * This function will scrape the Wikipedia's Sister Projects
- * Link: https://en.wikipedia.org/wiki/Main_Page#:~:text=Wikipedia%27s%20sister%20projects
- *
- * @returns void
- */
-const getSisterProjects = async () => {
+interface SisterProject {
+  imageSrc?: string
+  title?: string
+  projectLink?: string
+  description?: string
+}
+
+export default async function getSisterProjects() {
   const wikiPediaURL = 'https://en.wikipedia.org/wiki/Main_Page/'
-  const sisterProjects = []
+  const sisterProjects: SisterProject[] = []
 
   try {
     const response = await axios.get(wikiPediaURL)
@@ -50,13 +51,14 @@ const getSisterProjects = async () => {
     // Add or update file.
     fs.writeFileSync('./src/files/sister-projects.csv', csv)
 
-    await message(
-      false,
-      'Successfully saving Wikipedia data. Please check the files directory.',
-    )
-  } catch (error) {
-    await message(true, `Something\'s wrong. ${error.message}`)
+    await message({
+      isError: false,
+      message: 'Successfully saving data. Please check the files directory.',
+    })
+  } catch (error: any) {
+    await message({
+      isError: true,
+      message: `Something\'s wrong. ${error.message}`,
+    })
   }
 }
-
-export default getSisterProjects
