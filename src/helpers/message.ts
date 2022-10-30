@@ -1,8 +1,13 @@
 import chalkAnimation from 'chalk-animation'
 
-import sleep from './sleep.helper.js'
+import sleep from './sleep.js'
 
-const message = async (isError = false, message) => {
+interface Props {
+  isError: boolean
+  message: string
+}
+
+export default async function message({ isError = false, message }: Props) {
   let title
 
   if (isError) {
@@ -11,8 +16,6 @@ const message = async (isError = false, message) => {
     title = chalkAnimation.neon(`${message}`)
   }
 
-  await sleep()
+  await sleep({ ms: 1000 })
   title.stop()
 }
-
-export default message
