@@ -1,5 +1,5 @@
 ## Description
-> A CLI application program that will allow you to scrape Wikipedia information. After scraping process, it will save the data into a Comma Separated Values (CSV) file. For now this will scrape only the Wikipedia's Sister Projects.
+> An application that will allow you to scrape Wikipedia information. After scraping process, it will save the data into a Comma Separated Values (CSV) file. For now this will scrape only the Wikipedia's Sister Projects.
 
 > **Links** : [Wikipedia Sister Project](https://en.wikipedia.org/wiki/Main_Page#:~:text=Wikipedia%27s%20sister%20projects) | [Sample Data](https://github.com/kentlouisetonino/cli-app-wikipedia-web-scraping/blob/develop/src/files/sister-projects.csv)
 
