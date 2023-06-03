@@ -1,13 +1,15 @@
 import chalkAnimation from 'chalk-animation'
-
 import sleep from './sleep.js'
 
-interface Props {
+interface MessageProps {
   isError: boolean
   message: string
 }
 
-export default async function message({ isError = false, message }: Props) {
+export default async function message({
+  isError = false,
+  message,
+}: MessageProps) {
   let title
 
   if (isError) {
