@@ -1,30 +1,25 @@
 ## Description
-> - A CLI program that will allow you to scrape Wikipedia information.
+> - A CLI application that will allow you to scrape Wikipedia information. The main technology stack are TypeScript and NodeJS.
 
-> - After the scraping process, it will save the data into a Comma Separated
-    Values (CSV) file. For now this will scrape only the Wikipedia's Sister Projects.
+<br />
 
 > - **Links** : [Wikipedia Sister Project](https://en.wikipedia.org/wiki/Main_Page#:~:text=Wikipedia%27s%20sister%20projects) | [Sample Data](https://github.com/kentlouisetonino/cli-app-wikipedia-web-scraping/blob/develop/src/files/sister-projects.csv)
 
 ![sample](https://user-images.githubusercontent.com/69438999/193521598-c0319469-e52e-43c2-b38a-02a48fa4e885.PNG)
 
+
+
 <br />
 <br />
 <br />
 
-
-
-## Setup
+## Setup Guide
 > - Run the following commands.
 ```bash
 yarn install
 yarn build
 yarn start
 ```
-
-<br />
-<br />
-<br />
 
 
 
