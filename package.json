@@ -8,7 +8,6 @@
     "start": "node ./dist/app.js",
     "format": "prettier --write \"./**/*.{ts,yml,prettierrc,json,js}\""
   },
-  "license": "ISC",
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/chalk-animation": "^1.6.1",
