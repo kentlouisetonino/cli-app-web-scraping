@@ -1,4 +1,4 @@
-import chalkAnimation from 'chalk-animation'
+import chalkAnimation, { Animation } from 'chalk-animation'
 import sleep from './sleep.js'
 import { MessageProps } from './types.js'
 
@@ -6,7 +6,7 @@ export default async function message({
   isError = false,
   message,
 }: MessageProps) {
-  let title
+  let title: Animation
 
   if (isError) {
     title = chalkAnimation.pulse(`${message}`)
