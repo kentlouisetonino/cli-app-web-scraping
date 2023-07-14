@@ -7,11 +7,11 @@ import { SisterProject } from './libs/types.js'
 
 
 (async function getWikipediaSisterProjects() {
-  const wikiPediaURL = 'https://en.wikipedia.org/wiki/Main_Page/'
+  const wikipediaUrl = 'https://en.wikipedia.org/wiki/Main_Page/'
   const sisterProjects: SisterProject[] = []
 
   try {
-    const response = await axios.get(wikiPediaURL)
+    const response = await axios.get(wikipediaUrl)
     const $ = Cheerio.load(response.data)
     const relatedProjectsData = $('#sister-projects-list li')
 
