@@ -1,7 +1,5 @@
-interface Props {
-  ms: number
-}
+import { SleepProps } from "./types.js"
 
-const sleep = ({ ms }: Props) => new Promise((r) => setTimeout(r, ms))
+const sleep = ({ ms }: SleepProps) => new Promise((r) => setTimeout(r, ms))
 
 export default sleep
