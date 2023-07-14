@@ -7,6 +7,9 @@
 
 ![sample](https://user-images.githubusercontent.com/69438999/193521598-c0319469-e52e-43c2-b38a-02a48fa4e885.PNG)
 
+<br />
+
+https://user-images.githubusercontent.com/69438999/198880072-9d6bae63-4fa2-4f0a-9ae3-fb70b0497c48.mp4
 
 
 <br />
@@ -20,9 +23,3 @@ yarn install
 yarn build
 yarn start
 ```
-
-
-
-## Testing
-https://user-images.githubusercontent.com/69438999/198880072-9d6bae63-4fa2-4f0a-9ae3-fb70b0497c48.mp4
-
