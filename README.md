@@ -1,5 +1,5 @@
 ## Description
-> - A CLI application that will allow you to scrape Wikipedia information. The main technology stack are TypeScript and NodeJS.
+> - A CLI computer program that will allow you to scrape Wikipedia information. The main technology stack are TypeScript and NodeJS.
 
 <br />
 
