@@ -5,7 +5,7 @@ import { Parser } from 'json2csv'
 import message from './libs/message.js'
 import { SisterProject } from './libs/types.js'
 
-(async function getWikipediaSisterProjects() {
+;(async function getWikipediaSisterProjects() {
   const wikipediaUrl = 'https://en.wikipedia.org/wiki/Main_Page/'
   const sisterProjects: SisterProject[] = []
 
