@@ -1,4 +1,4 @@
-import { SleepProps } from "./types.js"
+import { SleepProps } from './types.js'
 
 const sleep = ({ ms }: SleepProps) => new Promise((r) => setTimeout(r, ms))
 
