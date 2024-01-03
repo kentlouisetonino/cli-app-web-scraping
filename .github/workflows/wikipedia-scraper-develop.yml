@@ -1,4 +1,4 @@
-name: cli-wikipedia-web-scraper (develop)
+name: wikipedia-scraper (develop)
 
 on:
   push:
