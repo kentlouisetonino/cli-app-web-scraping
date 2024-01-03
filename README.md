@@ -19,6 +19,12 @@ https://user-images.githubusercontent.com/69438999/198880072-9d6bae63-4fa2-4f0a-
 
 ## Local Development
 ```bash
+# Change mode permission and make it executable.
+chmod +x git-push-all
+
+# Push the changes in all remote repositories.
+./git-push-all
+
 # Install the packages.
 yarn install
 
